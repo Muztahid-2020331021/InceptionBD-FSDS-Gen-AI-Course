@@ -62,7 +62,19 @@ This project uses speech recognition and text-to-speech (TTS) to provide a hands
    python jarvis.py
    ```
 
-
+## Example Voice Commands
+- For Searching something on website:
+   - First say, "Enter web search mode". Then it will enter web search mode.
+   - Then say what you want to search.
+   - If you want to exit, then say "exit" or "close". Then it will close the system mode 
+   come back to general mode.
+- For Opening an application on your system:
+   - First say, "Enter system mode". Then it will enter system mode.
+   - Then say the name of the application that you want to open.
+   - If you want to exit, then say "exit" or "close". Then it will close the system mode 
+   come back to general mode.
+- Other casual conversation like:
+   - Tell me a joke.
 
 ## 👨‍💻 Author
 
