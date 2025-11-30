@@ -109,7 +109,7 @@ def play_music():
 
 
 def gemini_model_response(user_input):
-    GEMINI_API_KEY = "AIzaSyCw3F797hTYxL5vMAhzQnbRxqUxlZdRM18"
+    GEMINI_API_KEY = "Your api key"
     genai.configure(api_key=GEMINI_API_KEY) 
     model = genai.GenerativeModel("gemini-2.5-flash") 
     prompt = f"Your name is JARVIS, You act like JARVIS. Answar the provided question in short, Question: {user_input}"
@@ -130,9 +130,10 @@ def remove_common_words(text):
 
 def websearch():
     while True:
+        print("Web search mode...")
         speak("What do you want to search, sir?")
         text = takeCommand().lower()
-        print("Web search mode...")
+        print(f"User said: {text}")
         if "exit" in text or "close" in text:
             speak("Exiting web search mode")
             break
@@ -164,9 +165,10 @@ def websearch():
 
 def system_application_open():
     while True:
+        print("System mode...")
         speak("Which application do you want to open, sir?")
         text = takeCommand().lower()
-        print("System mode...")
+        print(f"User said: {text}")
         if "exit" in text or "close" in text:
             speak("Exiting System mode")
             break
