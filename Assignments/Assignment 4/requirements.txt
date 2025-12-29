@@ -1,5 +1,8 @@
-SpeechRecognition==3.14.3 
+SpeechRecognition==3.14.3
 pyttsx3==2.90
-pyaudio
+PyAudio
 wikipedia
 google-generativeai
+requests
+psutil
+pyautogui
